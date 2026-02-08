@@ -166,10 +166,10 @@ export class PDFGenerator {
         this.yPos = 20;
       }
 
-      this.doc.setFont(undefined, "bold");
+      this.doc.setFont("helvetica", "bold");
       this.doc.text(`${index + 1}. ${med.name}`, 25, this.yPos);
 
-      this.doc.setFont(undefined, "normal");
+      this.doc.setFont("helvetica", "normal");
       this.yPos += 5;
       this.doc.text(`    Dosage: ${med.dosage}`, 25, this.yPos);
 
